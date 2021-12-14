@@ -17,6 +17,9 @@ flash.hex: xmas21.c colors.h
 upload:
 	$(AVRDUDE) -v -p ATtiny13 -c usbasp -U flash:w:flash.hex:i
 
+disassemble: xmas21.elf
+	avr-objdump -d xmas21.elf
+
 clean:
 	rm xmas21.o
 	rm xmas21.elf
