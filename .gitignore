@@ -1,0 +1,4 @@
+colors.h
+flash.hex
+*.o
+*.elf
